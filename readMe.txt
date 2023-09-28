@@ -1,6 +1,7 @@
 This is a CRUD project using express mongo ejs.
 
 Stpes:-
-1.  Created app.js and installed required packages.
-2.  Created folders and files.
+1.  Create app.js and installed required packages.
+2.  Create folders and files.
 3.  Write code for running server.
+4.  write code for connecting with mongo db.
