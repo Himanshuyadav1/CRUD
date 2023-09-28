@@ -5,3 +5,4 @@ Stpes:-
 2.  Create folders and files.
 3.  Write code for running server.
 4.  write code for connecting with mongo db.
+5.  write code for FE using Bootstrap, Font-Awesome and EJS.

@@ -1,0 +1,86 @@
+<!-- including header partial -->
+<%- include('partials/header') %>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 mt-5">
+                <h2 class="alert alert-success text-center">Add New Student</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="number" class="form-control" id="age" name="age">
+                    </div>
+                    <div class="mb-3">
+                        <label for="fees" class="form-label">Fees</label>
+                        <input type="number" class="form-control" id="fees" name="fees">
+                    </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-sm-6 mt-5">
+                <h2 class="alert alert-danger text-center">List of All Student</h2>
+                <table class="table table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Fees</th>
+                        <th scope="col">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>
+                            <button class="btn">
+                                <i class="fa-solid fa-pen-to-square text-info"></i>
+                            </button>
+                            <button class="btn">
+                                <i class="fa-solid fa-trash-can text-danger"></i>
+                            </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>
+                            <button class="btn">
+                                <i class="fa-solid fa-pen-to-square text-info"></i>
+                            </button>
+                            <button class="btn">
+                                <i class="fa-solid fa-trash-can text-danger"></i>
+                            </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                        <td>
+                            <button class="btn">
+                                <i class="fa-solid fa-pen-to-square text-info"></i>
+                            </button>
+                            <button class="btn">
+                                <i class="fa-solid fa-trash-can text-danger"></i>
+                            </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<!-- including footer partial -->
+<%- include('partials/footer') %>
+    
