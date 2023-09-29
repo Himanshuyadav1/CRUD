@@ -10,7 +10,7 @@ const router = require('./routes/router.js');
 connectDB(database_url);
 
 //using middileware for getting form data
-app.use(express.urlencoded({extends: false} ));
+app.use(express.urlencoded({ extended: false }));
 
 // setting view engine to ejs
 app.set('view engine', 'ejs');

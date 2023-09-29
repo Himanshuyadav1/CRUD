@@ -28,8 +28,19 @@ class StudentController {
         }
     }
 
-    static editDocById = (req, res) => {
-        res.render('edit', { title: 'Edit Page' });
+    static editDocById = async (req, res) => {
+        try {
+            // getting id from params
+            const { id } = req.params;
+
+            // finding student data using id
+            const student = await StudentModel.findById(id);
+            // console.log(student);
+            // passing student data to Edit page
+            res.render('edit', { title: 'Edit Page', data: student });
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     static deleteDocById = (req, res) => {
