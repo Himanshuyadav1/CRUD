@@ -7,3 +7,4 @@ Stpes:-
 4.  Write code for connecting with mongo db.
 5.  Write code for FE using Bootstrap, Font-Awesome and EJS.
 6.  Serve pages using router.
+7.  Add controllers to serve pages.
