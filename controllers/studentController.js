@@ -42,12 +42,24 @@ class StudentController {
             console.log(error);
         }
     }
+    
+    static updateDocById = async (req, res) => {
+        try {
+            // getting id from params
+            const { id } = req.params;
+            // destructuring form data
+            // const { name, age, fees } = req.body;
 
-    static deleteDocById = (req, res) => {
-        res.redirect('/');
+            // finding student data using id and updating it and for running validator set runValidators to true
+            // await StudentModel.findByIdAndUpdate( id, {name, age, fees}, { runValidators: true });
+            await StudentModel.findByIdAndUpdate( id, req.body, { runValidators: true });
+            res.redirect('/');
+        } catch (error) {
+            console.log(error);
+        }
     }
-
-    static updateDocById = (req, res) => {
+    
+    static deleteDocById = (req, res) => {
         res.redirect('/');
     }
 }

@@ -13,3 +13,4 @@ Stpes:-
 10. Manually put some data into DB and retreiving them in index.
 11. Create data in DB through form.
 12. Add functionality for edit button.
+13. Add Update functionality on edit page.
