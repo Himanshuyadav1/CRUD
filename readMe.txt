@@ -11,3 +11,4 @@ Stpes:-
 8.  Create controllers and routes for CRUD.
 9.  Create student model for create and retreive data.
 10. Manually put some data into DB and retreiving them in index.
+11. Creating data in DB through form.

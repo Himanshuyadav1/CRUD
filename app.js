@@ -9,11 +9,15 @@ const router = require('./routes/router.js');
 // Database Connection
 connectDB(database_url);
 
+//using middileware for getting form data
+app.use(express.urlencoded({extends: false} ));
+
 // setting view engine to ejs
 app.set('view engine', 'ejs');
 
 // Using router for routes
 app.use('/', router);
+
 
 app.listen(port, () => {
     console.log(`Running your server at http://localhost:${port}`);
