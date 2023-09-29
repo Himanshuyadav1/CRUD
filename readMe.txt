@@ -8,4 +8,5 @@ Stpes:-
 5.  Write code for FE using Bootstrap, Font-Awesome and EJS.
 6.  Serve pages using router.
 7.  Add controllers to serve pages.
-8.  Create controller and routes for CRUD.
+8.  Create controllers and routes for CRUD.
+9.  Create student model for create and retreive data.
