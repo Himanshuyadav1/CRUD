@@ -59,8 +59,19 @@ class StudentController {
         }
     }
     
-    static deleteDocById = (req, res) => {
-        res.redirect('/');
+    static deleteDocById = async (req, res) => {
+        try {
+            // getting id from params
+            const { id } = req.params;
+
+            // finding student data using id and delete it
+            await StudentModel.findByIdAndDelete(id);
+
+            // redirecting to home page
+            res.redirect('/');
+        } catch (error) {
+            console.log(error);
+        }
     }
 }
 

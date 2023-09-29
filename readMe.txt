@@ -14,3 +14,4 @@ Stpes:-
 11. Create data in DB through form.
 12. Add functionality for edit button.
 13. Add Update functionality on edit page.
+14. Add functionality for delete button.

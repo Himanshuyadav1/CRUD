@@ -46,9 +46,11 @@
                                         <i class="fa-solid fa-pen-to-square text-info"></i>
                                     </button>
                                 </form>
-                                <button class="btn">
-                                    <i class="fa-solid fa-trash-can text-danger"></i>
-                                </button>
+                                <form action="/delete/<%= result._id %>" method="post" class="d-inline">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-trash-can text-danger"></i>
+                                    </button>
+                                </form>
                             </td>
                           </tr>
                       <% }) %>
