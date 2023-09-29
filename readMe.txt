@@ -15,3 +15,10 @@ Stpes:-
 12. Add functionality for edit button.
 13. Add Update functionality on edit page.
 14. Add functionality for delete button.
+15. Modifing some mistakes.
+
+Follow below steps to run the project:-
+1.  git clone 
+2.  cd CRUD
+3.  npm instal
+4.  npm run dev
