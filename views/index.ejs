@@ -34,47 +34,23 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Prithvi</td>
-                        <td>18</td>
-                        <td>5000</td>
-                        <td>
-                            <button class="btn">
-                                <i class="fa-solid fa-pen-to-square text-info"></i>
-                            </button>
-                            <button class="btn">
-                                <i class="fa-solid fa-trash-can text-danger"></i>
-                            </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>
-                            <button class="btn">
-                                <i class="fa-solid fa-pen-to-square text-info"></i>
-                            </button>
-                            <button class="btn">
-                                <i class="fa-solid fa-trash-can text-danger"></i>
-                            </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                        <td>
-                            <button class="btn">
-                                <i class="fa-solid fa-pen-to-square text-info"></i>
-                            </button>
-                            <button class="btn">
-                                <i class="fa-solid fa-trash-can text-danger"></i>
-                            </button>
-                        </td>
-                      </tr>
+                      <% results.forEach( (result, i) => { %>
+                        <tr>
+                            <th scope="row"><%= i %></th>
+                            <td><%= result.name %></td>
+                            <td><%= result.age %></td>
+                            <td><%= result.fees %></td>
+                            <td>
+                                <button class="btn">
+                                    <i class="fa-solid fa-pen-to-square text-info"></i>
+                                </button>
+                                <button class="btn">
+                                    <i class="fa-solid fa-trash-can text-danger"></i>
+                                </button>
+                            </td>
+                          </tr>
+                      <% }) %>
+                      
                     </tbody>
                 </table>
             </div>

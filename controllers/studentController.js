@@ -1,6 +1,14 @@
+const StudentModel = require('../models/StudentModel');
+
 class StudentController {
-    static getAllDoc = (req, res) => {
-        res.render('index', { title: 'Home Page' });
+    static getAllDoc = async (req, res) => {
+        try {
+            const results = await StudentModel.find();
+            console.log(results);
+            res.render('index', { title: 'Home Page', results });
+        } catch (error) {
+            console.log(error);
+        }        
     }
 
     static createDoc = (req, res) => {
