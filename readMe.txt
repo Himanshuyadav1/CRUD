@@ -18,7 +18,7 @@ Stpes:-
 15. Modifing some mistakes.
 
 Follow below steps to run the project:-
-1.  git clone 
+1.  git clone https://github.com/Himanshuyadav1/CRUD.git
 2.  cd CRUD
 3.  npm instal
 4.  npm run dev
